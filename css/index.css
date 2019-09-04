@@ -1,0 +1,124 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.logo > img {
+  width: 50px;
+}
+
+header {
+  text-align: center;
+}
+
+nav {
+  background-color: black;
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+  margin-bottom: 15px;
+}
+
+nav > .hamburger {
+  padding: 10px;
+  color: white;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+}
+
+nav > ul {
+  display: none;
+  position: relative;
+}
+
+nav > ul li {
+  color: white;
+  display: none;
+}
+
+.product {
+  text-align: center;
+}
+
+.product > p {
+  text-align: left;
+}
+
+.social {
+  padding-left: 0;
+  display: flex;
+  flex-direction: row;
+}
+
+.social_icon {
+  margin: 0 auto;
+}
+
+/* Tablets: because I only changed the header, and the
+          header is still the same, i dont care about the max */
+@media(min-width: 600px) {
+
+  header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0 auto;
+  }
+
+  header > .logo {
+    width: 33%;
+    padding-left: 10px;
+  }
+
+  header > h1 {
+    text-align: left;
+    width: 67%;
+  }
+
+}
+
+/* Computers */
+@media(min-width: 991px) {
+
+  nav > .hamburger {
+    display: none;
+  }
+
+
+  nav > ul {
+    display: flex;
+    flex-direction: row;
+    color: white;
+  }
+
+  nav > ul > li {
+    color: white !important;
+    display: flex;
+    padding: 10px;
+  }
+
+  nav > ul > li:hover {
+    cursor: pointer;
+    background-color: gray;
+  }
+
+  main {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .product {
+    width: 30%;
+    margin: 0 auto;
+  }
+
+
+}
