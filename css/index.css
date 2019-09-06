@@ -20,12 +20,11 @@ nav {
   background-color: black;
   display: flex;
   flex-direction: row;
-  justify-content: right;
+  justify-content: flex-end;
   margin-bottom: 15px;
 }
 
 nav > .hamburger {
-  padding: 10px;
   color: white;
 }
 
@@ -46,6 +45,10 @@ nav > ul li {
 
 .product {
   text-align: center;
+  border: 1px solid gray;
+  border-radius: 5px;
+  margin: 5px;
+  padding: 5px;
 }
 
 .product > p {
@@ -54,6 +57,10 @@ nav > ul li {
 
 .social {
   padding-left: 0;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin-top: 10px;
+  border-top: 1px solid gray;
   display: flex;
   flex-direction: row;
 }
@@ -74,15 +81,8 @@ nav > ul li {
   }
 
   header > .logo {
-    width: 33%;
-    padding-left: 10px;
+    width: 40%;
   }
-
-  header > h1 {
-    text-align: left;
-    width: 67%;
-  }
-
 }
 
 /* Computers */
